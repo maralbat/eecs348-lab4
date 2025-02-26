@@ -7,7 +7,7 @@ $columns = "size";
 echo "<table border='1'>";
 // Generate rows of the table
 for ($i = 1; $i <= $rows; $i++) {
-    echo "<tr>"; // Start a new row
+    echo "<br>"; // Start a new row
     // Generate columns within the row
     for ($j = 1; $j <= $columns; $j++) {
         echo "<td>" . $i * $j . "</td>"; // Calculate and display the product
