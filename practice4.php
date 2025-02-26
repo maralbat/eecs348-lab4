@@ -1,13 +1,13 @@
 <?php
 // Define the number of rows and columns
-$rows = "size";
-$columns = "size";
+$rows = $_POST['size'];
+$columns = $_POST['size'];
 
 // Start the HTML table with borders for clarity
 echo "<table border='1'>";
 // Generate rows of the table
 for ($i = 1; $i <= $rows; $i++) {
-    echo "<br>"; // Start a new row
+    echo "<tr>"; // Start a new row
     // Generate columns within the row
     for ($j = 1; $j <= $columns; $j++) {
         echo "<td>" . $i * $j . "</td>"; // Calculate and display the product
