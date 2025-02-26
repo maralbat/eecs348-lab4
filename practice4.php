@@ -1,8 +1,8 @@
 <?php
 // Outer loop for rows
-for ($i = 1; $i < 7; $i++) {
+for ($i = 1; $i < size+1; $i++) {
     // Inner loop for columns
-    for ($j = 1; $j < 7; $j++) {
+    for ($j = 1; $j < size+1; $j++) {
         // Check if it's the first column
         if ($j == 1) {
             // Display the product of $i and $j, left-padded to 2 characters
