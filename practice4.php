@@ -1,27 +1,27 @@
 <?php
-// Define the number of rows and columns
+//define the number of rows and columns
 $rows = $_POST['size'];
 $columns = $_POST['size'];
 
-// Start the HTML table with borders for clarity
+//start the HTML table with borders
 echo "<table border='1'>";
 
-//Header row for column index
-echo "<tr><td></td>"; // Empty top-left cell
+//header row for column index
+echo "<tr><td></td>"; //empty top-left cell
 for ($i = 1; $i <= $columns; $i++) {
-    echo "<td><b>$i</b></td>"; // Column indices
+    echo "<td><b>$i</b></td>"; //column indices
 }
 echo "</tr>";
 
-// Generate rows of the table
+//generate rows of the table
 for ($i = 1; $i <= $rows; $i++) {
-    echo "<tr>"; // Start a new row
-    echo "<td><b>$i</b></td>"; //Row index
-    // Generate columns within the row
+    echo "<tr>"; //start a new row
+    echo "<td><b>$i</b></td>"; //row index
+    //generate columns within the row
     for ($j = 1; $j <= $columns; $j++) {
-        echo "<td>" . $i * $j . "</td>"; // Calculate and display the product
+        echo "<td>" . $i * $j . "</td>"; //calculate and display the product
     }
-    echo "</tr>"; // End the row
+    echo "</tr>"; //end the row
 }
-echo "</table>"; // Close the table
+echo "</table>"; //close the table
 ?>
